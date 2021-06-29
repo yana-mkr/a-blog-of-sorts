@@ -11,23 +11,16 @@
             <textarea name="post-body" id="post-body"></textarea>
         </div>
         <button type="submit" class="btn">Create</button>
-    </form>
+    </form></br>
 
     {{#if post.length}}
-    {{!-- <section> --}}
-        <h2>Your Posts</h2>
-        {{!-- <ol> --}}
-            {{#each post as |post|}}
-            {{!-- <li> --}}
-                {{> post-info post}}
-                <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-                {{!--
-            </li> --}}
-            {{/each}}
-            {{!-- </ol> --}}
-        {{!--
-    </section> --}}
+    <h2>Your Posts</h2>
+    {{#each post as |post|}}
+    {{> post-info post}}
+    <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+    {{/each}}
     {{/if}}
+
 </section>
 
 
