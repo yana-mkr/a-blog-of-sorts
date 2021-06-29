@@ -6,7 +6,10 @@
     <form class="edit-post-form">
         <div>
             <input name="post-title" type="text" id="post-title" value="{{post.title}}" />
-            <textarea name=" post-body" value="{{post.post_text}}" id="post-body"></textarea>
+            <div>
+                <textarea name="post-body" value="{{post.post_text}}" type="text" id="post-body">
+            </textarea>
+            </div>
         </div>
         <button type="submit">Save post</button>
         <button type="button" class="delete-post-btn">Delete post</button>
