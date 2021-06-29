@@ -2,11 +2,9 @@
     <div class="title">
         <a href="/posts/{{id}}">{{title}}</a>
     </div>
+    <p>{{post_text}}</p>
     <div class="meta">
-        <p>{{post_text}}</p>
-        <div class="meta">
-            By {{user.username}} on {{format_date created_at}}
-            <a href="/posts/{{id}}"> {{comments.length}} {{format_plural "comment" comments.length}} </a>
-        </div>
+        By {{user.username}} on {{format_date created_at}}
+        <a href="/posts/{{id}}"> {{comments.length}} {{format_plural "comment" comments.length}} </a>
     </div>
 </article>

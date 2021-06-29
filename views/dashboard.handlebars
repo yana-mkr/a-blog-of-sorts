@@ -12,7 +12,6 @@
         </div>
         <button type="submit" class="btn">Create</button>
     </form></br>
-
     {{#if post.length}}
     <h2>Your Posts</h2>
     {{#each post as |post|}}
@@ -20,7 +19,6 @@
     <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
     {{/each}}
     {{/if}}
-
 </section>
 
 

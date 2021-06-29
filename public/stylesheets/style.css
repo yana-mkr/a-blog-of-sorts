@@ -120,7 +120,7 @@
   }
   
   .post {
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     line-height: 150%;
   }
   
@@ -133,6 +133,8 @@
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
+    border-bottom: 1px dotted #b5838d;
+    padding-bottom: 2%;
   }
   
   .comment-form {
