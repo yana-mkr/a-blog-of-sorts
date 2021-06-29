@@ -2,7 +2,7 @@ async function editFormHandler(event) {
     event.preventDefault();
 
     const title = document.querySelector('#post-title').value.trim();
-    const post_text = document.querySelector('#post-body').value.trim();
+    const post_text = document.querySelector('#post-body').value;
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
@@ -14,7 +14,7 @@ async function editFormHandler(event) {
             post_text
         }),
         headers: {
-            'Content-Type:': 'application/json'
+            'Content-Type': 'application/json'
         }
     });
 
